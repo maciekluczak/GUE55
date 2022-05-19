@@ -1,0 +1,412 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".MainActivity"
+    android:id="@+id/mainactivityBackground"
+    android:background="@drawable/gradient_list100">
+
+    <ImageView
+        android:id="@+id/enemyBackground"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/gradient_list300"
+        android:visibility="invisible" />
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:padding="50sp">
+
+
+    <TextView
+        android:id="@+id/logo"
+
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:text="GUE55"
+        android:textSize="83sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingRight="2sp"
+        android:shadowColor="@color/yellow700"
+        android:shadowRadius="1"
+        android:shadowDy="20"
+        android:shadowDx="15"
+        android:visibility="visible"
+       />
+
+    <ImageView
+        android:id="@+id/enemy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/guessEdit"
+
+        android:layout_centerHorizontal="true"
+
+        android:background="@drawable/enemy_list1"
+        android:visibility="invisible"/>
+
+
+    <LinearLayout
+        android:id="@+id/lifes"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:gravity="center"
+        android:visibility="invisible"
+        android:orientation="vertical"
+        android:layout_marginBottom="15sp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible">
+
+            <ImageView
+                android:id="@+id/life1"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:layout_marginRight="10sp"
+                android:visibility="invisible"
+
+                />
+            <ImageView
+                android:id="@+id/life2"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:layout_marginRight="10sp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/life3"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:layout_marginRight="10sp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/life4"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:layout_marginRight="10sp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/life5"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:visibility="visible"
+            >
+
+            <ImageView
+                android:id="@+id/life6"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:layout_marginRight="10sp"
+                android:visibility="invisible"
+
+                />
+            <ImageView
+                android:id="@+id/life7"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:layout_marginRight="10sp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/life8"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:layout_marginRight="10sp"
+                android:visibility="invisible"/>
+            <ImageView
+                android:id="@+id/life9"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:layout_marginRight="10sp"
+                android:visibility="invisible"/>
+
+            <ImageView
+                android:id="@+id/life10"
+                android:layout_width="45sp"
+                android:layout_height="45sp"
+                android:background="@drawable/heart_icon"
+                android:visibility="invisible"/>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+    <RelativeLayout
+        android:id="@+id/ScorePanel"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/lifes"
+        android:visibility="invisible"
+        >
+
+        <TextView
+            android:id="@+id/Score"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Score:"
+
+            android:gravity="left"
+            android:textSize="12sp"
+            android:layout_marginBottom="-7sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:paddingBottom="10sp"
+            android:shadowDy="10"
+            android:typeface="monospace"
+            />
+
+        <TextView
+            android:id="@+id/ScorePoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:paddingRight="6sp"
+            android:text="0"
+            android:gravity="left"
+            android:textStyle="italic"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:paddingBottom="10sp"
+            android:shadowDy="10"
+            android:typeface="monospace"
+            android:textColor="@color/white"
+            />
+
+        <View
+            android:id="@+id/pointsBar"
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:background="@color/white"
+            android:layout_below="@+id/Score"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:paddingBottom="10sp"
+            android:shadowDy="10"
+            android:layout_marginBottom="2sp"
+            />
+        <TextView
+            android:id="@+id/Takes"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Takes:"
+            android:layout_below="@+id/pointsBar"
+            android:gravity="left"
+            android:textSize="12sp"
+            android:layout_marginBottom="-7sp"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:shadowColor="@color/black"
+            android:shadowRadius="10"
+            android:paddingBottom="10sp"
+            android:shadowDy="10"
+            android:typeface="monospace"
+            />
+
+        <TextView
+            android:id="@+id/takesPoints"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@+id/pointsBar"
+            android:layout_alignParentEnd="true"
+            android:gravity="left"
+            android:paddingRight="6sp"
+            android:paddingBottom="10sp"
+            android:shadowColor="@color/black"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="0"
+            android:textColor="@color/white"
+            android:textStyle="italic"
+            android:typeface="monospace" />
+    </RelativeLayout>
+
+
+        <TextView
+            android:id="@+id/Hello"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerInParent="true"
+            android:layout_marginBottom="20sp"
+            android:gravity="center"
+            android:paddingBottom="10sp"
+            android:shadowColor="@color/black"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:text="Let's guess a number!"
+            android:textColor="@color/white"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="visible" />
+
+        <TextView
+            android:id="@+id/weakness"
+            android:layout_below="@+id/Hello"
+            android:shadowColor="#9A1B12"
+            android:shadowDy="10"
+            android:shadowRadius="10"
+            android:layout_marginTop="-20sp"
+            android:layout_marginBottom="20sp"
+            android:textColor="#FF9090"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Weakness is...\n between 0 and 20"
+            android:textSize="20sp"
+            android:textStyle="bold"
+            android:typeface="monospace"
+            android:visibility="invisible"/>
+
+
+        <Button
+            android:id="@+id/playButton"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_below="@+id/Hello"
+            android:backgroundTint="@color/yellow200"
+            android:text="Play"
+            android:typeface="monospace"
+            android:visibility="visible"
+
+
+            />
+
+
+
+    <Button
+        android:id="@+id/continueButton"
+        android:layout_width="match_parent"
+        android:layout_height="45sp"
+        android:layout_below="@+id/playButton"
+        android:backgroundTint="@color/yellow200"
+        android:text="continue"
+        android:typeface="monospace"
+        android:visibility="invisible"
+
+
+        />
+
+        <Button
+            android:id="@+id/registerButton"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_above="@id/trophylayout"
+            android:backgroundTint="@color/yellow200"
+            android:gravity="left"
+            android:text="Register"
+            android:typeface="monospace" />
+
+        <RelativeLayout
+            android:id="@+id/trophylayout"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            >
+
+            <Button
+                android:id="@+id/loginButton"
+                android:layout_width="match_parent"
+                android:layout_height="60sp"
+                android:layout_toStartOf="@id/trophyButton"
+                android:backgroundTint="@color/yellow200"
+                android:gravity="left"
+                android:text="Login"
+
+                android:typeface="monospace" />
+
+            <Button
+                android:id="@+id/trophyButton"
+
+                android:layout_width="60sp"
+                android:layout_alignParentEnd="true"
+                android:layout_height="60sp"
+                android:backgroundTint="@color/yellow200"
+                android:drawableTop="@drawable/trophy"
+                android:gravity="center"
+                android:typeface="monospace" />
+
+        </RelativeLayout>
+
+
+
+    <EditText
+        android:id="@+id/guessEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/weakness"
+        android:layout_marginTop="9sp"
+        android:hint="Try: maybe 6?"
+        android:inputType="numberDecimal"
+        android:maxLines="1"
+        android:visibility="invisible"
+
+
+        />
+
+
+        <Button
+            android:id="@+id/tryButton"
+            android:layout_width="match_parent"
+            android:layout_height="60sp"
+            android:layout_below="@+id/Hello"
+            android:layout_alignParentEnd="true"
+            android:layout_centerHorizontal="true"
+            android:layout_marginTop="5sp"
+            android:backgroundTint="@color/yellow200"
+            android:text="Try"
+            android:typeface="monospace"
+            android:visibility="invisible"
+
+            />
+
+
+
+
+
+</RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+
+        android:paddingRight="25sp"
+        android:paddingLeft="25sp"
+        android:paddingBottom="25sp"
+        android:id="@+id/leaderboard_sheet"
+        android:visibility="gone">
+
+        <include layout="@layout/activity_leaderboard" />
+    </RelativeLayout>
+
+</RelativeLayout>

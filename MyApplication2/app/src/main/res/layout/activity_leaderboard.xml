@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LeaderboardActivity"
+    app:layout_wrapBehaviorInParent="vertical_only"
+    app:behavior_peekHeight="5dp"
+    android:paddingTop="50sp"
+    android:paddingBottom="70sp"
+    android:paddingRight="5sp"
+    android:paddingLeft="5sp">
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:background="@drawable/bottomsheets_drawable"/>
+
+
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:paddingTop="20sp">
+        <TextView
+            android:id="@+id/leaderboardTxt"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Leaderboard"
+            android:textSize="40sp"
+            android:textColor="@color/white"
+            android:textStyle="bold"
+            android:layout_centerHorizontal="true"
+            android:gravity="center"
+            android:paddingRight="2sp"
+            android:shadowColor="@color/yellow700"
+            android:shadowRadius="1"
+            android:shadowDy="20"
+            android:shadowDx="15"
+            android:visibility="visible"
+            android:layout_marginBottom="20dp"/>
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_below="@+id/leaderboardTxt"
+                android:padding="30sp">
+            <RelativeLayout
+                android:id="@+id/leaderboard_layout"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_centerInParent="true"
+                android:layout_above="@+id/cancelButton"
+                android:gravity="top"
+
+                >
+                <ListView
+
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/leaderboard_list"
+                    android:typeface="monospace"
+
+
+                    ></ListView>
+
+            </RelativeLayout>
+
+                <Button
+                    android:id="@+id/cancelButton"
+                    android:layout_width="wrap_content"
+                    android:layout_height="60sp"
+                    android:layout_marginTop="20sp"
+                    android:layout_centerHorizontal="true"
+                    android:layout_alignParentBottom="true"
+                    android:backgroundTint="@color/yellow200"
+                    android:text="back"
+                    android:typeface="monospace"
+                    android:visibility="visible"
+
+                    />
+
+
+
+            </RelativeLayout>
+
+
+
+
+
+
+        </RelativeLayout>
+
+
+
+</RelativeLayout>

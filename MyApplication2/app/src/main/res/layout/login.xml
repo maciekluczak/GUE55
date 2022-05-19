@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".LoginActivity"
+    android:background="@drawable/gradient_list100"
+    android:padding="50sp">
+    <TextView
+        android:id="@+id/logologin"
+        android:layout_width="match_parent"
+        android:layout_height="150sp"
+        android:text="Login"
+        android:textSize="70sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        android:layout_centerHorizontal="true"
+        android:gravity="center"
+        android:paddingRight="2sp"
+        android:shadowColor="@color/yellow700"
+        android:shadowRadius="1"
+        android:shadowDy="20"
+        android:shadowDx="15"
+        android:visibility="visible"
+        />
+    <EditText
+        android:id="@+id/loginEdit"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="9sp"
+        android:hint="Login: Username"
+        android:inputType="textPersonName"
+        android:maxLines="1"
+        />
+    <EditText
+        android:id="@+id/passwordLoginEdit"
+        android:layout_width="200sp"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/loginEdit"
+        android:layout_centerInParent="true"
+        android:layout_marginTop="9sp"
+        android:hint="Password"
+        android:inputType="textPassword"
+        android:maxLines="1"
+        android:layout_marginBottom="100sp"
+        />
+
+    <Button
+        android:id="@+id/tryLogButton"
+        android:layout_width="wrap_content"
+        android:layout_height="60sp"
+        android:layout_below="@+id/passwordLoginEdit"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="5sp"
+        android:backgroundTint="@color/yellow200"
+        android:text="Log in"
+        android:typeface="monospace"
+
+
+        />
+
+
+
+
+</RelativeLayout>
