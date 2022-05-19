@@ -1,1 +1,1 @@
-![gralosujaca_short1_AdobeCreativeCloudExpress (1)](https://user-images.githubusercontent.com/77066408/169388383-bb669b60-372a-40a9-a073-2750390a3f91.gif)
+![gralosujaca_short1_AdobeCreativeCloudExpress (2)](https://user-images.githubusercontent.com/77066408/169388579-7cca7fde-eeec-42c5-8d37-991ec08ad3eb.gif)
