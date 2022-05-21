@@ -1,4 +1,7 @@
 # Welcome in game GUE55!
+
+Mobile game for Android
+
 Include: The ability to register new users, ranking player scores, the ability to resume the game state for a given player after leaving the game, storing information about players uses the SQLite database and sharedpreferences
 
 gameplay + animation + GUI written with Kotlin using android studio IDE
